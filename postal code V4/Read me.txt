@@ -1,0 +1,6 @@
+This will contain features, frameworks and scripts i am nit well verserd with.
+
+It is to show how i am able to use the available resourses before me to create websites
+beyond my knowledge.
+
+fixing media queries and divs 

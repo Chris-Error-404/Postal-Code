@@ -1,0 +1,378 @@
+/* reset all margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Import fonts */
+@font-face{
+    font-family: Internacional-W05-Black;
+    src: url(./fonts/Internacional-W05-Black.ttf) format('truetype');
+}
+@font-face{
+    font-family: sourceserifprobold;
+    src: url(./fonts/sourceserifprobold.otf) format('opentype');
+}
+
+/* declare global css */
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+
+/* BODY */
+body{
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*DEFAULT FONT-FAMILY*/
+}
+/* end BODY */
+
+/* MAIN NAVBAR */
+div.nav-con {   /* main navbar container */
+    width: 100%;
+    min-height: 45px;
+    max-height: 90px;
+    background-color: #00d084;
+    display: flex;  /*for easy centering */
+    justify-content: center;
+    align-items: center;
+}
+
+div.nav-con img{
+    display: none;
+}
+nav.nav-items a {   /* main navbar items/boxing/header for dropdown */
+    background-color: #00d084;
+    color: black;
+    padding-top: 0.5625em;
+    padding-bottom: 0.5625em;
+    padding-left: 3.125em;
+    padding-right: 3.125em;
+    transition: color 0.2s;
+    text-decoration: none;
+    height: auto;
+    transition: background-color 0.3s , color 0.3s , border 0.3s;
+}
+
+nav.nav-items a:hover { /* hover main navbar items*/
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+nav.nav-items a:active { /* click main navbar items */
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+nav.nav-items li { /* to align li(container for <a> */
+    display: inline-block;
+    position: relative;
+}
+/* end MAIN NAVBAR */
+
+/* DROPDOWN NAVBAR */
+.nav-items .dropdown {
+    display: none;
+    position: absolute;
+    top: 30px; /* Set it to the height of your nav-bar */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    width: 100%; /* Full width to cover below the navbar */
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.nav-items .dropdown li { /* list of dropdown items */
+    width: 100%;
+    height: 42px;
+    padding: 0px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items .dropdown li a { /* dropdown box styling */
+    margin: 0;
+    padding: 10px;
+    width: 100%; /*to make item box Full*/
+    background-color: #f9f9f9;
+    color: black;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.05s;
+    text-align: center;
+}
+
+.nav-items .dropdown li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.nav-items .dropdown li a:active { /* when dropdown items are clicked */
+    background-color: black;
+    color: white;
+}
+
+/* Show dropdown on hover */
+nav.nav-items li:hover .dropdown {
+    display: block;
+    opacity: 1;
+    height: auto; /* Adjusts height for smooth appearance */
+}
+/* end DROPDOWN NAVBAR */
+
+/* HERO */
+div.hero{
+    width: 100%;
+    height: auto; /* Responsive text adjustment */
+    background-color: black;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    box-sizing: border-box; /* Removes wrapping */
+    text-align: center;
+}
+
+div.hero h1{ /*Hero Text*/
+    color: white;
+    font-family: Internacional-W05-Black;
+    font-size: 4em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
+/* end HERO */
+
+/* SEARCH */
+div.search-container{ /* search section container */
+    background-color: #F6F6F6;
+    width:100%;
+    height: auto;
+    justify-content: left;
+    align-items: center;
+}
+
+form.srch-box{ 
+    padding: 2em;
+    padding-left: 3.5em;
+    padding-top: 4em;
+    padding-bottom: 5em;
+}
+
+form.srch-box p{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.125em;
+}
+
+input.textarea{ /* text area */
+    padding-left: 0.625em;
+    padding-left: 0.625em;
+    height: 45px;
+    width: 45%; /* makes textarea responsive */
+    border: 1px solid black;
+}
+
+input::placeholder{
+    padding: 0.625em;
+    font-size: 1.125em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button.search{
+    height: 45px;
+    width: 70px;  
+    background-color:#2cde97;
+    color: black;
+    border: none;
+    padding: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.search:hover {
+    background-color: black;
+    color: white;
+}
+/* end SEARCH */
+
+/* INFO SECTION */
+div.info-box{ 
+    background-color: #00d084;
+    width: 100%;
+    height: auto;
+}
+
+div.info-text-box{
+    padding: 4em;
+}
+
+div.info-text-box h1{ 
+    font-size: 6.25em;
+    font-weight: 500;
+    line-height: 0.9em;
+    padding-bottom: 0.5em;
+}
+
+div.info-text-box p{
+    font-size: 1.1875em;
+    line-height:2em;
+    text-align: left;
+}
+/* end INFO SECTION */
+
+/* NIPOST SECTION */
+div.nipost{
+    margin: 50px;
+}
+
+div.nipost p{
+    font-size: 1.1875em;
+}
+
+span.nipost{
+    font-weight: 700;
+}
+/* end NIPOST SECTION */
+
+/* REGION SECTION */
+div.region-box-container1{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+}
+
+div.region-box{
+    background-color: #ffe97d;
+    width: 31%;
+    margin: 1.15%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+div.region-box2{
+    background-color: #d1d1e1;
+    width: 31%;
+    margin: 1.15%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+div.region-box3{
+    background-color: #c0ebf1;
+    width: 31%;
+    margin: 1.15%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+h2.reg{
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+hr.reg{
+    border-color: black;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+ul.reg{
+    list-style-type: disc;
+    margin-top: 2.4vh;
+    margin-bottom: 2.4vh;
+    margin-left: 70px;
+}
+
+ul.reg li{
+    font-size: 1em;
+    line-height: 1.9em;   
+}
+
+ul.reg li:hover{
+    text-decoration: underline;
+}
+
+/* Region Box Animation */
+div.region-box, div.region-box2, div.region-box3 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+div.region-box.visible, div.region-box2.visible, div.region-box3.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* end REGION SECTION */
+
+/* 2ND-NAVBAR */
+div.nd-nav-container{
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+    align-items: center;
+}
+
+div.nd-nav{
+    padding: 3.75em;
+    line-height: 2em;
+}
+
+div.nd-nav li{
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+div.nd-nav li:hover{
+    text-decoration: underline;
+}
+/* end 2ND-NAVBAR */
+
+/* FOOTER */
+span.footer{
+    margin: 20px;
+    text-align: center;
+}
+
+span.footer p{
+    font-size:0.75em;
+}
+/* end FOOTER */
+
+/* Scroll Fade-In Effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

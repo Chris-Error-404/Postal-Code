@@ -1,0 +1,300 @@
+/* Main nav-con */
+@media (max-width: 1024px) {
+    nav.nav-items {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav.nav-items {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    nav.nav-items {
+        display: none;
+    }
+}
+/* end main nav-con */
+
+
+/*menu*/
+@media (max-width: 1024px){
+    div.nav-con img{
+        display: inline;
+    }
+}
+
+@media (max-width: 786px){
+    div.nav-con img{
+        display: inline;
+    }
+}
+
+@media (max-width: 680px){
+    div.nav-con img{
+        display: inline;
+    }
+}
+
+
+
+
+/* hamburger menu */
+@media (max-width: 1024px) {
+    span.ham-menu{
+        display: inline;
+    }
+}
+@media (max-width: 768px) {
+    span.ham-menu{
+        display: inline;
+    }
+}
+@media (max-width: 680px) {
+    span.ham-menu{
+        display: inline
+    }
+}
+
+
+/* end hamburger menu */
+
+
+/* Hero */
+@media (max-width: 1024px) {
+    div.hero {
+        padding: 2em;
+    }
+    div.hero h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    div.hero {
+        padding: 1.5em;
+    }
+    div.hero h1 {
+        font-size: 2.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    div.hero {
+        padding: 1em;
+    }
+    div.hero h1 {
+        font-size: 2.5em;
+    }
+}
+/* end hero */
+
+
+/* Search section */
+@media (max-width: 1024px) {
+    form.srch-box {
+        padding: 2.5em;
+    }
+    input.textarea {
+        transition: width 0.5s ease;
+    }
+}
+
+@media (max-width: 768px) {
+    form.srch-box {
+        padding: 2em;
+        padding-left: 3em;
+    }
+    input.textarea {
+        width: 50%;
+        transition: width 0.5s ease;
+    }
+    input.textarea:focus {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    form.srch-box {
+        padding: 2em;
+    }
+    input.textarea {
+        width: 45%;
+        transition: width 0.5s ease;
+    }
+    input.textarea:focus {
+        width: 70%;
+    }
+    input::placeholder {
+        font-size: 0.8em;
+    }
+}
+/* end search section */
+
+
+/* Info section */
+@media (max-width: 1024px) {
+    div.info-text-box {
+        padding: 2.5em;
+    }
+    div.info-text-box h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    div.info-text-box {
+        padding: 2em;
+    }
+    div.info-text-box h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 480px) {
+    div.info-text-box {
+        padding: 1.5em;
+    }
+    div.info-text-box h1 {
+        font-size: 2.5em;
+    }
+    div.info-text-box p {
+        font-size: 1em;
+    }
+}
+/* end info section */
+
+
+/* Nipost section */
+@media (max-width: 1024px) {
+    div.nipost {
+        margin: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    div.nipost {
+        margin: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    div.nipost {
+        margin: 1em;
+    }
+    div.nipost p {
+        font-size: 1em;
+    }
+}
+/* end nipost section */
+
+
+/* Region section */
+@media (max-width: 1024px) {
+    div.region-box, div.region-box2, div.region-box3 {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    div.region-box, div.region-box2, div.region-box3 {
+        width: 100%;
+        margin: 1.15%;
+    }
+}
+
+@media (max-width: 480px) {
+    div.region-box, div.region-box2, div.region-box3 {
+        width: 100%;
+        margin: 1.15%;
+        height: auto;
+        box-sizing: border-box;
+    }
+}
+h2.reg {
+    text-align: center;
+    font-size: 2em;
+}
+hr.reg {
+    margin: 0 30px;
+}
+/* end region section */
+
+
+/* Second navbar */
+@media (max-width: 1024px) {
+    div.nd-nav {
+        padding: 1.5em;
+    }
+    div.nd-nav li {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 768px) {
+    div.nd-nav {
+        padding: 1.5em;
+    }
+    div.nd-nav li {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    div.nd-nav {
+        padding: 1em;
+    }
+    div.nd-nav li {
+        font-size: 1.2em;
+    }
+}
+/* end second navbar */
+
+
+/* Footer */
+@media (max-width: 1024px) {
+    span.footer p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    span.footer p {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    span.footer p {
+        font-size: 0.8em;
+    }
+}
+/* end footer */
+
+
+/*hamburger menu*/
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav.nav-items {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-box {
+        width: 95%;
+    }
+}
